@@ -68,6 +68,8 @@ group :test do
 end
 
 
-gem 'bcrypt', '~> 3.1', '>= 3.1.20'
+gem "bcrypt", "~> 3.1", ">= 3.1.20"
 
-gem 'simple_form', '~> 5.3'
+gem "simple_form", "~> 5.3"
+
+gem "acts_as_votable", "~> 0.14.0"

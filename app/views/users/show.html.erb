@@ -1,6 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @user %>
+<%# <%= render @user %> 
+
+<%= @user.email.split('@').first%>
+<p>Post:</p><%= pluralize(@user.posts.count, 'post') %>
+
+<% @user.posts.each do |post| %>
+  <%= image_tag post.photo , class: 'mb-4' %>
+<% end %>
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |

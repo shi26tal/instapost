@@ -1,0 +1,8 @@
+class Posts::UpvotesController < ApplicationController
+  def create
+    @post = Post.find(params[:post_id])
+    @post.liked_by current_user
+
+    redirect_to root_path
+  end
+end

@@ -23,4 +23,4 @@ end
 
 # - new → displays the login page.
 # - create → verifies credentials and logs in the user.
-# - destroy → logs out the user.
+# destroy → logs out the user
